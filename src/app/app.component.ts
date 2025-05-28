@@ -6,9 +6,17 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+   <div class="flex flex-col h-screen bg-gray-100 px-4">
+    <div class="flex flex-col gap-1 items-center justify-center py-10">
+      <h1 class="text-2xl tracking-wide font-medium">
+        Angular forms designer
+        <p class="text-gray-500">
+          Creating some beautiful "Angular Forms" with Angular Material
+        </p>
+      </h1>
+    </div>
 
-    <router-outlet />
+   </div>
   `,
   styles: [],
 })
