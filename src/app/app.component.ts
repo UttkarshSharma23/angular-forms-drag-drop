@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FormElementsMenu, MainCanvasComponent } from './drag-drop/components';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    MainCanvasComponent,
+    FormElementsMenu
+  ],
+
+
   template: `
    <div class="flex flex-col h-screen bg-gray-100 px-4">
     <div class="flex flex-col gap-1 items-center justify-center py-10">
@@ -16,10 +25,16 @@ import { RouterOutlet } from '@angular/router';
       </h1>
     </div>
 
+    <!-- TODO: Add the componeents here -->
+  <main-canvas></main-canvas>
+  <form-elements-menu></form-elements-menu>
    </div>
   `,
   styles: [],
 })
+
+
+
 export class AppComponent {
   title = 'agular-forms-drag-drop';
 }
