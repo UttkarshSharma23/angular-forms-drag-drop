@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FormElementsMenu, MainCanvasComponent } from './drag-drop/components';
+import { FieldSettingsComponent, FormElementsMenu, MainCanvasComponent } from './drag-drop/components';
 
 
 
@@ -10,7 +10,8 @@ import { FormElementsMenu, MainCanvasComponent } from './drag-drop/components';
   imports: [
     RouterOutlet,
     MainCanvasComponent,
-    FormElementsMenu
+    FormElementsMenu,
+    FieldSettingsComponent
   ],
 
 
@@ -25,9 +26,13 @@ import { FormElementsMenu, MainCanvasComponent } from './drag-drop/components';
       </h1>
     </div>
 
-    <!-- TODO: Add the componeents here -->
-  <main-canvas></main-canvas>
-  <form-elements-menu></form-elements-menu>
+    <!-- TODO: Add the components here -->
+    <div class="flex">
+       <main-canvas class="w-64"></main-canvas>
+       <form-elements-menu class = "flex-1"></form-elements-menu>
+       <field-settings class="w-64"></field-settings>
+    </div>
+
    </div>
   `,
   styles: [],

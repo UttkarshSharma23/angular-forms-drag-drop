@@ -1,9 +1,10 @@
-import { FormElementsMenu, MainCanvasComponent } from "./components"
+import { FieldSettingsComponent, FormElementsMenu, MainCanvasComponent } from "./components"
 
 
 export const components = [
     MainCanvasComponent,
     FormElementsMenu,
+    FieldSettingsComponent
 ]
 
 export const exports = [

@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { components, providers , exports} from "./declarations";
-import { FormElementsMenu, MainCanvasComponent } from "./components";
+import { FieldSettingsComponent, FormElementsMenu, MainCanvasComponent } from "./components";
 
 
 // NOTE: configuration setup for the file metadata
@@ -8,7 +8,8 @@ import { FormElementsMenu, MainCanvasComponent } from "./components";
 @NgModule({
   imports:[
     MainCanvasComponent,
-    FormElementsMenu
+    FormElementsMenu,
+    FieldSettingsComponent
   ],
   declarations:components,
   providers: providers,
